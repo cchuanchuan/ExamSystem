@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="top.cllccc.exam.dao.StudentDao">
+    <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
+    <!--获得所有图书 -->
+    <select id="queryStudentByNo" resultMap="studentMap">
+        select * from student s join clazs c on s.class_no=c.class_no where student_no=#{no}
+    </select>
+    <select id="queryAllStudent" resultMap="studentMap">
+        select * from student s join clazs c on s.class_no=c.class_no
+    </select>
+
+    <!--<select id="queryAllStudent" resultType="top.cllccc.exam.domain.Student">
+        select * from student s join clazs c on s.class_no=c.class_no
+    </select>-->
+
+
+    <resultMap id="studentMap" type="top.cllccc.exam.domain.Student">
+        <id property="studentNo" column="student_no"></id>
+        <result property="studentPassword" column="student_password"></result>
+        <result property="studentName" column="student_name"></result>
+        <result property="studentSex" column="student_sex"></result>
+        <result property="studentPhone" column="student_phone"></result>
+        <result property="studentAddress" column="student_address"></result>
+        <!--<association property="clazs" column="class_no" select="top.cllccc.exam.dao.ClazsDao.queryClazsByNo"/>-->
+        <!-- 一对多collection中一定要用ofType -->
+        <association property="clazs" column="class_no" javaType="top.cllccc.exam.domain.Clazs">
+            <id property="classNo" column="class_no"></id>
+            <result property="className" column="class_name"></result>
+            <result property="classCount" column="class_count"></result>
+        </association>
+    </resultMap>
+
+
+</mapper>
