@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="top.cllccc.exam.dao.ExamDao">
+    <!--查询 -->
+    <select id="getExamByExamNo" resultType="top.cllccc.exam.domain.Exam">
+        select * from exam where exam_no = #{examNo}
+    </select>
+    <select id="getExamByCourseNo" resultType="top.cllccc.exam.domain.Exam">
+        select * from exam where course_no = #{courseNo}
+    </select>
+    <select id="getAllExam" resultType="top.cllccc.exam.domain.Exam">
+        select * from exam
+    </select>
+    <!-- 增加 -->
+    <insert id="addExam">
+        INSERT INTO exam(exam_no,course_no)
+        VALUES(#{examNo},#{courseNo})
+    </insert>
+    <!-- 删除 -->
+    <delete id="deleteExam">
+        DELETE FROM exam WHERE exam_no=#{examNo}
+    </delete>
+</mapper>

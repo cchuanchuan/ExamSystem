@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="top.cllccc.exam.dao.TimeDao">
+    <!--查询 -->
+    <select id="getTimeByNo" resultType="top.cllccc.exam.domain.Time">
+        select * from time where time_no = #{timeNo}
+    </select>
+    <select id="getAllTime" resultType="top.cllccc.exam.domain.Time">
+        select * from time
+    </select>
+    <!-- 增加 -->
+    <insert id="addTime">
+        INSERT INTO time(time_no,time_week,time_day,time_order)
+        VALUES(#{timeNo},#{timeWeek},#{timeDay},#{timeOrder})
+    </insert>
+    <!-- 删除 -->
+    <delete id="deleteTime">
+        DELETE FROM time WHERE time_no=#{timeNo}
+    </delete>
+    <!-- 更新 -->
+    <update id="updateTime">
+        UPDATE time
+        SET time_week=#{timeWeek},
+        time_day=#{timeDay},
+        time_order=#{timeOrder}
+        WHERE
+        time_no=#{timeNo}
+    </update>
+</mapper>
