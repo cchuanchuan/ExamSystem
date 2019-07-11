@@ -14,13 +14,16 @@ public class StudentService {
     private StudentDao studentDao;
 
 
-    public List<Student> queryAllStudent(){
-        return studentDao.queryAllStudent();
+    public List<Student> getAllStudent(){
+        return studentDao.getAllStudent();
     }
 
-    public Student queryStudentByNo(String no){
-        return studentDao.queryStudentByNo(no);
+    public Student getStudentByNo(String studentNo){
+        return studentDao.getStudentByNo(studentNo);
     }
 
+    public List<Student> getStudentByClass(String classNo){
+        return studentDao.getStudentByClass(classNo);
+    }
 
 }

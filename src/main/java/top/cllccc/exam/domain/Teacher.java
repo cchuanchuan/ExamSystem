@@ -1,5 +1,8 @@
 package top.cllccc.exam.domain;
 
+import lombok.Data;
+
+@Data
 public class Teacher {
     private String teacherNo;
     private String teacherName;

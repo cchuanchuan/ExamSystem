@@ -15,7 +15,6 @@ public class Student {
     private String studentSex;
     private String studentPhone;
     private String studentAddress;
-    private Clazs clazs;
-
+    private String classNo;
 }
 

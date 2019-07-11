@@ -2,35 +2,47 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--命名空间应该是对应接口的包名+接口名 -->
 <mapper namespace="top.cllccc.exam.dao.ClazsDao">
-    <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
-    <!--获得所有图书 -->
-    <select id="queryClazsByNo" resultMap="classMap">
-        select * from student s join clazs c on s.class_no=c.class_no where c.class_no = #{0}
+    <!--查询 -->
+    <select id="getClazsByNo" resultType="top.cllccc.exam.domain.Clazs">
+        select * from clazs where class_no = #{0}
     </select>
-    <select id="queryAllClazs" resultMap="classMap">
-        select * from student s join clazs c on s.class_no=c.class_no
+    <select id="getAllClazs" resultType="top.cllccc.exam.domain.Clazs">
+        select * from clazs
     </select>
-    <!--<select id="queryAllStudent" resultType="top.cllccc.exam.domain.Student">
-        select * from student s join clazs c on s.class_no=c.class_no
-    </select>-->
-
-
+    <!-- 增加 -->
+    <insert id="addClazs">
+        INSERT INTO clazs(class_no,class_name,class_count,dep_no)
+        VALUES(#{classNo},#{className},#{classCount},#{depNo})
+    </insert>
+    <!-- 删除 -->
+    <delete id="deleteClazs">
+        DELETE FROM clazs WHERE class_no=#{classNo}
+    </delete>
+    <!-- 更新 -->
+    <update id="updateClazs">
+        UPDATE clazs SET class_name=#{className},
+        class_count=#{classCount},
+        dep_no=#{depNo}
+        WHERE
+        class_no=#{classNo}
+    </update>
     <resultMap id="classMap" type="top.cllccc.exam.domain.Clazs">
         <id property="classNo" column="class_no"></id>
         <result property="className" column="class_name"></result>
         <result property="classCount" column="class_count"></result>
-
-        <!--<association property="teacherEntity" column="TEACHER_ID" select="getTeacher"/>-->
+        <result property="depNo" column="dep_no"></result>
+        <collection property="students"
+                    column="class_No"
+                    select="top.cllccc.exam.dao.StudentDao.getStudentByClass">
+        </collection>
         <!-- 一对多collection中一定要用ofType -->
-        <collection property="students" ofType="top.cllccc.exam.domain.Student">
+        <!--<collection property="students" ofType="top.cllccc.exam.domain.Student">
             <id property="studentNo" column="student_no"></id>
             <result property="studentPassword" column="student_password"></result>
             <result property="studentName" column="student_name"></result>
             <result property="studentSex" column="student_sex"></result>
             <result property="studentPhone" column="student_phone"></result>
             <result property="studentAddress" column="student_address"></result>
-        </collection>
+        </collection>-->
     </resultMap>
-
-
 </mapper>

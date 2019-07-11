@@ -17,9 +17,9 @@ public class ClazsController {
     @Autowired
     ClazsService clazsService;
 
-    @GetMapping("queryClazsByNo")
+    @GetMapping("getClazsByNo")
     @ResponseBody
-    public Clazs queryClazsByNo(String class_no){
-        return clazsService.queryClazsByNo(class_no);
+    public Clazs getClazsByNo(String class_no){
+        return clazsService.getClazsByNo(class_no);
     }
 }

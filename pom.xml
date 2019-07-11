@@ -65,6 +65,12 @@
             <scope>test</scope>
         </dependency>
 
+        <!--访问templates下页面(视图解析器)-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
         <!-- 单元测试依赖 -->
         <dependency>
             <groupId>junit</groupId>

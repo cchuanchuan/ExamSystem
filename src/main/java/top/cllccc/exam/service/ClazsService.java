@@ -13,7 +13,7 @@ public class ClazsService {
     @Autowired
     private ClazsDao clazsDao;
 
-    public Clazs queryClazsByNo(String class_no){
-        return clazsDao.queryClazsByNo(class_no);
+    public Clazs getClazsByNo(String class_no){
+        return clazsDao.getClazsByNo(class_no);
     }
 }

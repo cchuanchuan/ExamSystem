@@ -17,16 +17,22 @@ public class StudentController {
 
     @RequestMapping("allStudent")
     @ResponseBody
-    public List<Student> queryAllStudent(){
-        List<Student> students = studentService.queryAllStudent();
+    public List<Student> getAllStudent(){
+        List<Student> students = studentService.getAllStudent();
         return students;
     }
 
-    @RequestMapping("queryStudentByNo")
+    @RequestMapping("getStudentByNo")
     @ResponseBody
-    public Student queryStudentByNo(String no){
-        Student student = studentService.queryStudentByNo(no);
+    public Student getStudentByNo(String studentNo){
+        Student student = studentService.getStudentByNo(studentNo);
         return student;
+    }
+
+    @RequestMapping("getStudentByClass")
+    @ResponseBody
+    public List<Student> getStudentByClass(String classNo){
+        return studentService.getStudentByClass(classNo);
     }
 
 }
