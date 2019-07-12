@@ -1,0 +1,228 @@
+2019-07-12 17:33:37,659 DEBUG ResourceBundleMessageInterpolator:89 -Loaded expression factory via original TCCL
+2019-07-12 17:33:37,663 INFO  ExamApplication:50 -Starting ExamApplication on DESKTOP-0RVI1HM with PID 19052 (E:\MyProject\ExamSystem\target\classes started by CCC in E:\MyProject\ExamSystem)
+2019-07-12 17:33:37,668 DEBUG ExamApplication:53 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-12 17:33:37,669 INFO  ExamApplication:646 -No active profile set, falling back to default profiles: default
+2019-07-12 17:33:37,689 DEBUG ValidatorFactoryImpl:578 -HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-12 17:33:37,690 DEBUG ValidatorFactoryImpl:579 -HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-12 17:33:37,690 DEBUG ValidatorFactoryImpl:580 -HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-12 17:33:37,691 DEBUG ValidatorFactoryImpl:581 -HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-12 17:33:37,691 DEBUG ValidatorFactoryImpl:582 -HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-12 17:33:38,726 DEBUG MybatisAutoConfiguration:184 -Searching for mappers annotated with @Mapper
+2019-07-12 17:33:38,734 DEBUG MybatisAutoConfiguration:196 -Using auto-configuration base package 'top.cllccc.exam'
+2019-07-12 17:33:38,738 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ClassRoomDao.class]
+2019-07-12 17:33:38,739 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ClazsDao.class]
+2019-07-12 17:33:38,739 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\CourseDao.class]
+2019-07-12 17:33:38,740 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\CourseTimeDao.class]
+2019-07-12 17:33:38,740 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\DepartmentDao.class]
+2019-07-12 17:33:38,741 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamDao.class]
+2019-07-12 17:33:38,741 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamRoomDao.class]
+2019-07-12 17:33:38,741 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamTeacherDao.class]
+2019-07-12 17:33:38,741 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamTimeDao.class]
+2019-07-12 17:33:38,742 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\StuCourseDao.class]
+2019-07-12 17:33:38,742 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\StudentDao.class]
+2019-07-12 17:33:38,742 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\TeachPlanDao.class]
+2019-07-12 17:33:38,743 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\TeacherDao.class]
+2019-07-12 17:33:38,743 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\TimeDao.class]
+2019-07-12 17:33:38,744 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'classRoomDao' and 'top.cllccc.exam.dao.ClassRoomDao' mapperInterface
+2019-07-12 17:33:38,745 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'classRoomDao'.
+2019-07-12 17:33:38,745 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'clazsDao' and 'top.cllccc.exam.dao.ClazsDao' mapperInterface
+2019-07-12 17:33:38,745 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'clazsDao'.
+2019-07-12 17:33:38,746 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'courseDao' and 'top.cllccc.exam.dao.CourseDao' mapperInterface
+2019-07-12 17:33:38,746 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'courseDao'.
+2019-07-12 17:33:38,747 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'courseTimeDao' and 'top.cllccc.exam.dao.CourseTimeDao' mapperInterface
+2019-07-12 17:33:38,747 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'courseTimeDao'.
+2019-07-12 17:33:38,747 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'departmentDao' and 'top.cllccc.exam.dao.DepartmentDao' mapperInterface
+2019-07-12 17:33:38,748 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-07-12 17:33:38,748 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examDao' and 'top.cllccc.exam.dao.ExamDao' mapperInterface
+2019-07-12 17:33:38,748 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examDao'.
+2019-07-12 17:33:38,749 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examRoomDao' and 'top.cllccc.exam.dao.ExamRoomDao' mapperInterface
+2019-07-12 17:33:38,749 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examRoomDao'.
+2019-07-12 17:33:38,749 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examTeacherDao' and 'top.cllccc.exam.dao.ExamTeacherDao' mapperInterface
+2019-07-12 17:33:38,750 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examTeacherDao'.
+2019-07-12 17:33:38,750 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examTimeDao' and 'top.cllccc.exam.dao.ExamTimeDao' mapperInterface
+2019-07-12 17:33:38,750 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examTimeDao'.
+2019-07-12 17:33:38,751 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'stuCourseDao' and 'top.cllccc.exam.dao.StuCourseDao' mapperInterface
+2019-07-12 17:33:38,751 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'stuCourseDao'.
+2019-07-12 17:33:38,751 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'studentDao' and 'top.cllccc.exam.dao.StudentDao' mapperInterface
+2019-07-12 17:33:38,751 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'studentDao'.
+2019-07-12 17:33:38,752 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'teachPlanDao' and 'top.cllccc.exam.dao.TeachPlanDao' mapperInterface
+2019-07-12 17:33:38,752 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'teachPlanDao'.
+2019-07-12 17:33:38,752 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'teacherDao' and 'top.cllccc.exam.dao.TeacherDao' mapperInterface
+2019-07-12 17:33:38,752 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'teacherDao'.
+2019-07-12 17:33:38,752 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'timeDao' and 'top.cllccc.exam.dao.TimeDao' mapperInterface
+2019-07-12 17:33:38,752 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'timeDao'.
+2019-07-12 17:33:39,830 INFO  Http11NioProtocol:173 -Initializing ProtocolHandler ["http-nio-9999"]
+2019-07-12 17:33:39,843 INFO  StandardService:173 -Starting service [Tomcat]
+2019-07-12 17:33:39,843 INFO  StandardEngine:173 -Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-12 17:33:39,851 INFO  AprLifecycleListener:173 -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-12 17:33:39,852 INFO  AprLifecycleListener:173 -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-07-12 17:33:39,852 INFO  AprLifecycleListener:173 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-12 17:33:39,852 INFO  AprLifecycleListener:173 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-12 17:33:40,945 INFO  AprLifecycleListener:173 -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-07-12 17:33:41,074 INFO  [/]:173 -Initializing Spring embedded WebApplicationContext
+2019-07-12 17:33:41,222 DEBUG LogFactory:135 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-12 17:33:41,287 INFO  DruidDataSourceAutoConfigure:56 -Init DruidDataSource
+2019-07-12 17:33:41,825 INFO  DruidDataSource:930 -{dataSource-1} inited
+2019-07-12 17:33:41,947 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ClassRoomMapper.xml]'
+2019-07-12 17:33:41,979 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ClazsMapper.xml]'
+2019-07-12 17:33:41,994 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\CourseMapper.xml]'
+2019-07-12 17:33:42,011 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\CourseTimeMapper.xml]'
+2019-07-12 17:33:42,024 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\DepartmentMapper.xml]'
+2019-07-12 17:33:42,040 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamMapper.xml]'
+2019-07-12 17:33:42,051 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamRoomMapper.xml]'
+2019-07-12 17:33:42,063 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamTeacherMapper.xml]'
+2019-07-12 17:33:42,075 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamTimeMapper.xml]'
+2019-07-12 17:33:42,088 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\StuCourseMapper.xml]'
+2019-07-12 17:33:42,105 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\StudentMapper.xml]'
+2019-07-12 17:33:42,117 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\TeachPlanMapper.xml]'
+2019-07-12 17:33:42,128 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\TeacherMapper.xml]'
+2019-07-12 17:33:42,142 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\TimeMapper.xml]'
+2019-07-12 17:33:42,181 DEBUG TraversableResolvers:60 -Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-07-12 17:33:42,181 DEBUG ResourceBundleMessageInterpolator:89 -Loaded expression factory via original TCCL
+2019-07-12 17:33:42,188 DEBUG TraversableResolvers:60 -Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-07-12 17:33:42,189 DEBUG ConfigurationImpl:148 -Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-07-12 17:33:42,190 DEBUG ConfigurationImpl:180 -Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-07-12 17:33:42,191 DEBUG ConfigurationImpl:194 -Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-07-12 17:33:42,193 DEBUG ValidationXmlParser:120 -Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-07-12 17:33:42,194 DEBUG ResourceLoaderHelper:53 -Trying to load META-INF/validation.xml via user class loader
+2019-07-12 17:33:42,194 DEBUG ResourceLoaderHelper:60 -Trying to load META-INF/validation.xml via TCCL
+2019-07-12 17:33:42,195 DEBUG ResourceLoaderHelper:66 -Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-07-12 17:33:42,196 DEBUG ValidationXmlParser:127 -No META-INF/validation.xml found. Using annotation based configuration only.
+2019-07-12 17:33:42,203 DEBUG ValidatorFactoryImpl:578 -HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-12 17:33:42,204 DEBUG ValidatorFactoryImpl:579 -HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-12 17:33:42,204 DEBUG ValidatorFactoryImpl:580 -HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-12 17:33:42,204 DEBUG ValidatorFactoryImpl:581 -HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-12 17:33:42,205 DEBUG ValidatorFactoryImpl:582 -HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-12 17:33:42,632 WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105 -Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-07-12 17:33:42,703 DEBUG MybatisAutoConfiguration:234 -No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-07-12 17:33:42,866 INFO  Http11NioProtocol:173 -Starting ProtocolHandler ["http-nio-9999"]
+2019-07-12 17:33:42,899 INFO  ExamApplication:59 -Started ExamApplication in 5.983 seconds (JVM running for 8.42)
+2019-07-12 17:34:24,542 INFO  [/]:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-12 17:34:24,596 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-07-12 17:34:24,606 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73f226c5] was not registered for synchronization because synchronization is not active
+2019-07-12 17:34:24,611 DEBUG SQL_CACHE:62 -Cache Hit Ratio [SQL_CACHE]: 0.0
+2019-07-12 17:34:24,657 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7306416c] will not be managed by Spring
+2019-07-12 17:34:24,662 DEBUG getAllStudent_COUNT:159 -==>  Preparing: SELECT count(0) FROM student 
+2019-07-12 17:34:24,707 DEBUG getAllStudent_COUNT:159 -==> Parameters: 
+2019-07-12 17:34:24,739 DEBUG getAllStudent_COUNT:159 -<==      Total: 1
+2019-07-12 17:34:24,740 DEBUG PreparedStatementPool:129 -{conn-10001, pstmt-20000} enter cache
+2019-07-12 17:34:24,743 DEBUG getAllStudent:159 -==>  Preparing: select * from student LIMIT ?, ? 
+2019-07-12 17:34:24,744 DEBUG getAllStudent:159 -==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 17:34:24,747 DEBUG getAllStudent:159 -<==      Total: 2
+2019-07-12 17:34:24,748 DEBUG PreparedStatementPool:129 -{conn-10001, pstmt-20001} enter cache
+2019-07-12 17:34:24,749 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73f226c5]
+2019-07-12 17:34:24,751 INFO  StudentController:31 -获取所有student信息111
+2019-07-12 17:44:53,775 DEBUG ResourceBundleMessageInterpolator:89 -Loaded expression factory via original TCCL
+2019-07-12 17:44:53,797 DEBUG ValidatorFactoryImpl:578 -HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-12 17:44:53,797 DEBUG ValidatorFactoryImpl:579 -HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-12 17:44:53,798 DEBUG ValidatorFactoryImpl:580 -HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-12 17:44:53,798 DEBUG ValidatorFactoryImpl:581 -HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-12 17:44:53,798 DEBUG ValidatorFactoryImpl:582 -HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-12 17:44:53,809 INFO  ExamApplication:50 -Starting ExamApplication on DESKTOP-0RVI1HM with PID 12212 (E:\MyProject\ExamSystem\target\classes started by CCC in E:\MyProject\ExamSystem)
+2019-07-12 17:44:53,810 DEBUG ExamApplication:53 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-12 17:44:53,811 INFO  ExamApplication:646 -No active profile set, falling back to default profiles: default
+2019-07-12 17:44:54,772 DEBUG MybatisAutoConfiguration:184 -Searching for mappers annotated with @Mapper
+2019-07-12 17:44:54,780 DEBUG MybatisAutoConfiguration:196 -Using auto-configuration base package 'top.cllccc.exam'
+2019-07-12 17:44:54,784 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ClassRoomDao.class]
+2019-07-12 17:44:54,785 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ClazsDao.class]
+2019-07-12 17:44:54,785 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\CourseDao.class]
+2019-07-12 17:44:54,785 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\CourseTimeDao.class]
+2019-07-12 17:44:54,785 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\DepartmentDao.class]
+2019-07-12 17:44:54,786 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamDao.class]
+2019-07-12 17:44:54,786 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamRoomDao.class]
+2019-07-12 17:44:54,786 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamTeacherDao.class]
+2019-07-12 17:44:54,786 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\ExamTimeDao.class]
+2019-07-12 17:44:54,786 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\StuCourseDao.class]
+2019-07-12 17:44:54,787 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\StudentDao.class]
+2019-07-12 17:44:54,787 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\TeachPlanDao.class]
+2019-07-12 17:44:54,787 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\TeacherDao.class]
+2019-07-12 17:44:54,788 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\TimeDao.class]
+2019-07-12 17:44:54,789 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'classRoomDao' and 'top.cllccc.exam.dao.ClassRoomDao' mapperInterface
+2019-07-12 17:44:54,790 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'classRoomDao'.
+2019-07-12 17:44:54,790 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'clazsDao' and 'top.cllccc.exam.dao.ClazsDao' mapperInterface
+2019-07-12 17:44:54,790 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'clazsDao'.
+2019-07-12 17:44:54,791 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'courseDao' and 'top.cllccc.exam.dao.CourseDao' mapperInterface
+2019-07-12 17:44:54,791 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'courseDao'.
+2019-07-12 17:44:54,791 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'courseTimeDao' and 'top.cllccc.exam.dao.CourseTimeDao' mapperInterface
+2019-07-12 17:44:54,792 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'courseTimeDao'.
+2019-07-12 17:44:54,792 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'departmentDao' and 'top.cllccc.exam.dao.DepartmentDao' mapperInterface
+2019-07-12 17:44:54,792 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'departmentDao'.
+2019-07-12 17:44:54,792 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examDao' and 'top.cllccc.exam.dao.ExamDao' mapperInterface
+2019-07-12 17:44:54,792 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examDao'.
+2019-07-12 17:44:54,793 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examRoomDao' and 'top.cllccc.exam.dao.ExamRoomDao' mapperInterface
+2019-07-12 17:44:54,793 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examRoomDao'.
+2019-07-12 17:44:54,793 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examTeacherDao' and 'top.cllccc.exam.dao.ExamTeacherDao' mapperInterface
+2019-07-12 17:44:54,793 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examTeacherDao'.
+2019-07-12 17:44:54,793 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'examTimeDao' and 'top.cllccc.exam.dao.ExamTimeDao' mapperInterface
+2019-07-12 17:44:54,793 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'examTimeDao'.
+2019-07-12 17:44:54,794 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'stuCourseDao' and 'top.cllccc.exam.dao.StuCourseDao' mapperInterface
+2019-07-12 17:44:54,794 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'stuCourseDao'.
+2019-07-12 17:44:54,794 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'studentDao' and 'top.cllccc.exam.dao.StudentDao' mapperInterface
+2019-07-12 17:44:54,794 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'studentDao'.
+2019-07-12 17:44:54,795 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'teachPlanDao' and 'top.cllccc.exam.dao.TeachPlanDao' mapperInterface
+2019-07-12 17:44:54,795 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'teachPlanDao'.
+2019-07-12 17:44:54,796 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'teacherDao' and 'top.cllccc.exam.dao.TeacherDao' mapperInterface
+2019-07-12 17:44:54,796 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'teacherDao'.
+2019-07-12 17:44:54,796 DEBUG ClassPathMapperScanner:180 -Creating MapperFactoryBean with name 'timeDao' and 'top.cllccc.exam.dao.TimeDao' mapperInterface
+2019-07-12 17:44:54,796 DEBUG ClassPathMapperScanner:216 -Enabling autowire by type for MapperFactoryBean with name 'timeDao'.
+2019-07-12 17:44:55,500 INFO  Http11NioProtocol:173 -Initializing ProtocolHandler ["http-nio-9999"]
+2019-07-12 17:44:55,512 INFO  StandardService:173 -Starting service [Tomcat]
+2019-07-12 17:44:55,513 INFO  StandardEngine:173 -Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-12 17:44:55,521 INFO  AprLifecycleListener:173 -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-07-12 17:44:55,522 INFO  AprLifecycleListener:173 -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-07-12 17:44:55,522 INFO  AprLifecycleListener:173 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-07-12 17:44:55,523 INFO  AprLifecycleListener:173 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-07-12 17:44:56,604 INFO  AprLifecycleListener:173 -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-07-12 17:44:56,728 INFO  [/]:173 -Initializing Spring embedded WebApplicationContext
+2019-07-12 17:44:56,857 DEBUG LogFactory:135 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-12 17:44:56,913 INFO  DruidDataSourceAutoConfigure:56 -Init DruidDataSource
+2019-07-12 17:44:57,319 INFO  DruidDataSource:930 -{dataSource-1} inited
+2019-07-12 17:44:57,424 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ClassRoomMapper.xml]'
+2019-07-12 17:44:57,445 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ClazsMapper.xml]'
+2019-07-12 17:44:57,460 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\CourseMapper.xml]'
+2019-07-12 17:44:57,473 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\CourseTimeMapper.xml]'
+2019-07-12 17:44:57,484 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\DepartmentMapper.xml]'
+2019-07-12 17:44:57,495 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamMapper.xml]'
+2019-07-12 17:44:57,506 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamRoomMapper.xml]'
+2019-07-12 17:44:57,516 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamTeacherMapper.xml]'
+2019-07-12 17:44:57,528 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\ExamTimeMapper.xml]'
+2019-07-12 17:44:57,539 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\StuCourseMapper.xml]'
+2019-07-12 17:44:57,551 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\StudentMapper.xml]'
+2019-07-12 17:44:57,562 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\TeachPlanMapper.xml]'
+2019-07-12 17:44:57,574 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\TeacherMapper.xml]'
+2019-07-12 17:44:57,586 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\TimeMapper.xml]'
+2019-07-12 17:44:57,621 DEBUG TraversableResolvers:60 -Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-07-12 17:44:57,621 DEBUG ResourceBundleMessageInterpolator:89 -Loaded expression factory via original TCCL
+2019-07-12 17:44:57,625 DEBUG TraversableResolvers:60 -Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-07-12 17:44:57,626 DEBUG ConfigurationImpl:148 -Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-07-12 17:44:57,626 DEBUG ConfigurationImpl:180 -Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-07-12 17:44:57,627 DEBUG ConfigurationImpl:194 -Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-07-12 17:44:57,628 DEBUG ValidationXmlParser:120 -Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-07-12 17:44:57,628 DEBUG ResourceLoaderHelper:53 -Trying to load META-INF/validation.xml via user class loader
+2019-07-12 17:44:57,629 DEBUG ResourceLoaderHelper:60 -Trying to load META-INF/validation.xml via TCCL
+2019-07-12 17:44:57,629 DEBUG ResourceLoaderHelper:66 -Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-07-12 17:44:57,629 DEBUG ValidationXmlParser:127 -No META-INF/validation.xml found. Using annotation based configuration only.
+2019-07-12 17:44:57,636 DEBUG ValidatorFactoryImpl:578 -HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-07-12 17:44:57,636 DEBUG ValidatorFactoryImpl:579 -HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-07-12 17:44:57,636 DEBUG ValidatorFactoryImpl:580 -HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-07-12 17:44:57,637 DEBUG ValidatorFactoryImpl:581 -HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-07-12 17:44:57,637 DEBUG ValidatorFactoryImpl:582 -HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-07-12 17:44:57,954 WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105 -Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-07-12 17:44:58,001 DEBUG MybatisAutoConfiguration:234 -No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-07-12 17:44:58,166 INFO  Http11NioProtocol:173 -Starting ProtocolHandler ["http-nio-9999"]
+2019-07-12 17:44:58,198 INFO  ExamApplication:59 -Started ExamApplication in 4.905 seconds (JVM running for 7.089)
+2019-07-12 17:45:02,863 INFO  [/]:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-12 17:45:02,912 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-07-12 17:45:02,926 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@787dfd83] was not registered for synchronization because synchronization is not active
+2019-07-12 17:45:02,933 DEBUG SQL_CACHE:62 -Cache Hit Ratio [SQL_CACHE]: 0.0
+2019-07-12 17:45:02,973 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2b3fa12b] will not be managed by Spring
+2019-07-12 17:45:02,977 DEBUG getAllStudent_COUNT:159 -==>  Preparing: SELECT count(0) FROM student 
+2019-07-12 17:45:03,025 DEBUG getAllStudent_COUNT:159 -==> Parameters: 
+2019-07-12 17:45:03,060 DEBUG getAllStudent_COUNT:159 -<==      Total: 1
+2019-07-12 17:45:03,061 DEBUG PreparedStatementPool:129 -{conn-10001, pstmt-20000} enter cache
+2019-07-12 17:45:03,063 DEBUG getAllStudent:159 -==>  Preparing: select * from student LIMIT ?, ? 
+2019-07-12 17:45:03,064 DEBUG getAllStudent:159 -==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 17:45:03,067 DEBUG getAllStudent:159 -<==      Total: 2
+2019-07-12 17:45:03,069 DEBUG PreparedStatementPool:129 -{conn-10001, pstmt-20001} enter cache
+2019-07-12 17:45:03,070 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@787dfd83]
+2019-07-12 17:45:03,071 INFO  StudentController:29 -获取所有student信息111

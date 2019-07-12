@@ -61,6 +61,7 @@
         </dependency>
 
         <!--@Data注解依赖包-->
+        <!--Slf4j日志依赖文件-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
