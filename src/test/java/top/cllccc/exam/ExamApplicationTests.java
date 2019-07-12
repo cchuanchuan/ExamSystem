@@ -10,9 +10,12 @@ import top.cllccc.exam.domain.Clazs;
 import top.cllccc.exam.domain.Student;
 import top.cllccc.exam.service.ClazsService;
 
+import javax.sql.DataSource;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ExamApplicationTests {
+
 
 	@Autowired
 	private ClazsService clazsService;

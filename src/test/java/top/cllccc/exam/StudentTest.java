@@ -10,6 +10,7 @@ import top.cllccc.exam.domain.Clazs;
 import top.cllccc.exam.domain.Student;
 import top.cllccc.exam.service.ClazsService;
 
+import javax.sql.DataSource;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -20,9 +21,12 @@ public class StudentTest {
     private ClazsService clazsService;
 
     @Autowired
+    DataSource dataSource;
+    @Autowired
     private StudentDao studentDao;
     @Test
     public void contextLoads() {
+        System.out.println(dataSource);
         //学生信息
 		System.out.println(studentDao);
 		Student student = new Student();
