@@ -5897,3 +5897,415 @@ Caused by: java.lang.ClassNotFoundException: top.cllccc.exam.entity.Clazs
 2019-08-01 17:52:20,406 DEBUG selectAll:159 -==> Parameters: 
 2019-08-01 17:52:20,408 DEBUG selectAll:159 -<==      Total: 4
 2019-08-01 17:52:20,409 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@426b13]
+2019-08-02 09:33:00,442 INFO  ExamApplication:50 -Starting ExamApplication on DESKTOP-0RVI1HM with PID 5716 (E:\MyProject\ExamSystem\target\classes started by CCC in E:\MyProject\ExamSystem)
+2019-08-02 09:33:00,474 DEBUG ResourceBundleMessageInterpolator:89 -Loaded expression factory via original TCCL
+2019-08-02 09:33:00,474 DEBUG ExamApplication:53 -Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-02 09:33:00,474 INFO  ExamApplication:646 -No active profile set, falling back to default profiles: default
+2019-08-02 09:33:00,505 DEBUG ValidatorFactoryImpl:578 -HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-08-02 09:33:00,505 DEBUG ValidatorFactoryImpl:579 -HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-08-02 09:33:00,505 DEBUG ValidatorFactoryImpl:580 -HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-08-02 09:33:00,505 DEBUG ValidatorFactoryImpl:581 -HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-08-02 09:33:00,505 DEBUG ValidatorFactoryImpl:582 -HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-08-02 09:33:02,337 DEBUG ClassPathMapperScanner:437 -Identified candidate component class: file [E:\MyProject\ExamSystem\target\classes\top\cllccc\exam\dao\common\dao\TimeMapper.class]
+2019-08-02 09:33:02,337 DEBUG ClassPathMapperScanner:156 -Creating MapperFactoryBean with name 'timeMapper' and 'top.cllccc.exam.dao.common.dao.TimeMapper' mapperInterface
+2019-08-02 09:33:02,337 DEBUG ClassPathMapperScanner:202 -Enabling autowire by type for MapperFactoryBean with name 'timeMapper'.
+2019-08-02 09:33:02,600 DEBUG MapperAutoConfiguration:188 -Searching for mappers annotated with @Mapper
+2019-08-02 09:33:02,615 DEBUG MapperAutoConfiguration:200 -Using auto-configuration base package 'top.cllccc.exam'
+2019-08-02 09:33:02,615 WARN  ClassPathMapperScanner:142 -No MyBatis mapper was found in '[top.cllccc.exam]' package. Please check your configuration.
+2019-08-02 09:33:02,647 DEBUG MybatisAutoConfiguration:184 -Searching for mappers annotated with @Mapper
+2019-08-02 09:33:02,647 DEBUG MybatisAutoConfiguration:196 -Using auto-configuration base package 'top.cllccc.exam'
+2019-08-02 09:33:02,647 WARN  ClassPathMapperScanner:166 -No MyBatis mapper was found in '[top.cllccc.exam]' package. Please check your configuration.
+2019-08-02 09:33:04,020 INFO  Http11NioProtocol:173 -Initializing ProtocolHandler ["http-nio-9999"]
+2019-08-02 09:33:04,036 INFO  StandardService:173 -Starting service [Tomcat]
+2019-08-02 09:33:04,036 INFO  StandardEngine:173 -Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-02 09:33:04,052 INFO  AprLifecycleListener:173 -An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2019-08-02 09:33:04,052 INFO  AprLifecycleListener:173 -Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-08-02 09:33:04,052 INFO  AprLifecycleListener:173 -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-08-02 09:33:04,052 INFO  AprLifecycleListener:173 -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-08-02 09:33:05,212 INFO  AprLifecycleListener:173 -OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-08-02 09:33:06,640 INFO  [/]:173 -Initializing Spring embedded WebApplicationContext
+2019-08-02 09:33:06,965 DEBUG LogFactory:135 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-08-02 09:33:07,012 INFO  DruidDataSourceAutoConfigure:56 -Init DruidDataSource
+2019-08-02 09:33:07,636 INFO  DruidDataSource:930 -{dataSource-1} inited
+2019-08-02 09:33:07,962 DEBUG SqlSessionFactoryBean:529 -Parsed mapper file: 'file [E:\MyProject\ExamSystem\target\classes\mapper\common\mapper\TimeMapper.xml]'
+2019-08-02 09:33:09,124 DEBUG TraversableResolvers:70 -Found javax.persistence.Persistence on classpath, but no method 'getPersistenceUtil'. Assuming JPA 1 environment. All properties will per default be traversable.
+2019-08-02 09:33:09,124 DEBUG ResourceBundleMessageInterpolator:89 -Loaded expression factory via original TCCL
+2019-08-02 09:33:09,124 DEBUG TraversableResolvers:70 -Found javax.persistence.Persistence on classpath, but no method 'getPersistenceUtil'. Assuming JPA 1 environment. All properties will per default be traversable.
+2019-08-02 09:33:09,124 DEBUG ConfigurationImpl:148 -Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-08-02 09:33:09,124 DEBUG ConfigurationImpl:180 -Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-08-02 09:33:09,139 DEBUG ConfigurationImpl:194 -Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-08-02 09:33:09,139 DEBUG ValidationXmlParser:120 -Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-08-02 09:33:09,139 DEBUG ResourceLoaderHelper:53 -Trying to load META-INF/validation.xml via user class loader
+2019-08-02 09:33:09,139 DEBUG ResourceLoaderHelper:60 -Trying to load META-INF/validation.xml via TCCL
+2019-08-02 09:33:09,139 DEBUG ResourceLoaderHelper:66 -Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-08-02 09:33:09,139 DEBUG ValidationXmlParser:127 -No META-INF/validation.xml found. Using annotation based configuration only.
+2019-08-02 09:33:09,155 DEBUG ValidatorFactoryImpl:578 -HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-08-02 09:33:09,155 DEBUG ValidatorFactoryImpl:579 -HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-08-02 09:33:09,155 DEBUG ValidatorFactoryImpl:580 -HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-08-02 09:33:09,155 DEBUG ValidatorFactoryImpl:581 -HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-08-02 09:33:09,155 DEBUG ValidatorFactoryImpl:582 -HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-08-02 09:33:09,607 WARN  ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105 -Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-08-02 09:33:09,707 DEBUG MapperAutoConfiguration:243 -No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-08-02 09:33:09,709 DEBUG MybatisAutoConfiguration:234 -No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-08-02 09:33:09,845 DEBUG InternalLoggerFactory:43 -Using SLF4J as the default logging framework
+2019-08-02 09:33:09,851 DEBUG DefaultClientResources:109 --Dio.netty.eventLoopThreads: 4
+2019-08-02 09:33:09,873 DEBUG DefaultEventLoopGroupProvider:138 -Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2019-08-02 09:33:09,896 DEBUG InternalThreadLocalMap:54 --Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2019-08-02 09:33:09,896 DEBUG InternalThreadLocalMap:57 --Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2019-08-02 09:33:09,904 DEBUG ResourceLeakDetector:129 --Dio.netty.leakDetection.level: simple
+2019-08-02 09:33:09,904 DEBUG ResourceLeakDetector:130 --Dio.netty.leakDetection.targetRecords: 4
+2019-08-02 09:33:09,922 DEBUG PlatformDependent:927 -Platform: Windows
+2019-08-02 09:33:09,937 DEBUG PlatformDependent0:395 --Dio.netty.noUnsafe: false
+2019-08-02 09:33:09,937 DEBUG PlatformDependent0:851 -Java version: 8
+2019-08-02 09:33:09,937 DEBUG PlatformDependent0:120 -sun.misc.Unsafe.theUnsafe: available
+2019-08-02 09:33:09,937 DEBUG PlatformDependent0:144 -sun.misc.Unsafe.copyMemory: available
+2019-08-02 09:33:09,937 DEBUG PlatformDependent0:182 -java.nio.Buffer.address: available
+2019-08-02 09:33:09,937 DEBUG PlatformDependent0:243 -direct buffer constructor: available
+2019-08-02 09:33:09,953 DEBUG PlatformDependent0:313 -java.nio.Bits.unaligned: available, true
+2019-08-02 09:33:09,953 DEBUG PlatformDependent0:378 -jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2019-08-02 09:33:09,953 DEBUG PlatformDependent0:385 -java.nio.DirectByteBuffer.<init>(long, int): available
+2019-08-02 09:33:09,953 DEBUG PlatformDependent:970 -sun.misc.Unsafe: available
+2019-08-02 09:33:09,953 DEBUG PlatformDependent:1089 --Dio.netty.tmpdir: C:\Users\CCC\AppData\Local\Temp (java.io.tmpdir)
+2019-08-02 09:33:09,953 DEBUG PlatformDependent:1168 --Dio.netty.bitMode: 64 (sun.arch.data.model)
+2019-08-02 09:33:09,953 DEBUG PlatformDependent:159 --Dio.netty.maxDirectMemory: 2833776640 bytes
+2019-08-02 09:33:09,953 DEBUG PlatformDependent:166 --Dio.netty.uninitializedArrayAllocationThreshold: -1
+2019-08-02 09:33:09,953 DEBUG CleanerJava6:92 -java.nio.ByteBuffer.cleaner(): available
+2019-08-02 09:33:09,953 DEBUG PlatformDependent:186 --Dio.netty.noPreferDirect: false
+2019-08-02 09:33:09,953 DEBUG ResourceLeakDetectorFactory:202 -Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@50110971
+2019-08-02 09:33:09,969 DEBUG PlatformDependent:832 -org.jctools-core.MpscChunkedArrayQueue: available
+2019-08-02 09:33:09,984 DEBUG Loggers$LoggerFactory:249 -Using Slf4j logging framework
+2019-08-02 09:33:10,031 DEBUG DefaultClientResources:190 -LatencyUtils/HdrUtils are not available, metrics are disabled
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:142 --Dio.netty.allocator.numHeapArenas: 8
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:143 --Dio.netty.allocator.numDirectArenas: 8
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:145 --Dio.netty.allocator.pageSize: 8192
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:150 --Dio.netty.allocator.maxOrder: 11
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:154 --Dio.netty.allocator.chunkSize: 16777216
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:155 --Dio.netty.allocator.tinyCacheSize: 512
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:156 --Dio.netty.allocator.smallCacheSize: 256
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:157 --Dio.netty.allocator.normalCacheSize: 64
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:158 --Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:159 --Dio.netty.allocator.cacheTrimInterval: 8192
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:160 --Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:161 --Dio.netty.allocator.useCacheForAllThreads: true
+2019-08-02 09:33:10,211 DEBUG PooledByteBufAllocator:162 --Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2019-08-02 09:33:10,659 INFO  DocumentationPluginsBootstrapper:120 -Context refreshed
+2019-08-02 09:33:10,712 INFO  DocumentationPluginsBootstrapper:123 -Found 1 custom documentation plugin(s)
+2019-08-02 09:33:10,728 INFO  ApiListingReferenceScanner:41 -Scanning for api listing references
+2019-08-02 09:33:10,743 DEBUG OperationModelsProvider:76 -Adding return parameter of type Ljava/util/List<Ltop/cllccc/exam/domain/Time;>;
+2019-08-02 09:33:10,759 DEBUG OperationModelsProvider:83 -Reading parameters models for handlerMethod |checkTime|
+2019-08-02 09:33:10,759 DEBUG OperationModelsProvider:94 -Finished reading parameters models for handlerMethod |checkTime|
+2019-08-02 09:33:10,775 DEBUG SwaggerOperationModelsProvider:84 -Reading parameters models for handlerMethod |checkTime|
+2019-08-02 09:33:10,790 DEBUG DefaultModelProvider:80 -Skipping model of type Ljava/util/List<Ltop/cllccc/exam/domain/Time;>; as its either a container type, map, enum or base type, or its already been handled
+2019-08-02 09:33:10,795 DEBUG ApiModelReader:74 -Did not find any parameter models for java.util.List<top.cllccc.exam.domain.Time>
+2019-08-02 09:33:10,797 DEBUG DefaultModelDependencyProvider:124 -Adding type for parameter Ltop/cllccc/exam/domain/Time;
+2019-08-02 09:33:10,798 DEBUG DefaultModelDependencyProvider:126 -Recursively resolving dependencies for parameter Ltop/cllccc/exam/domain/Time;
+2019-08-02 09:33:10,849 DEBUG OptimizedModelPropertiesProvider:122 -Reading property id
+2019-08-02 09:33:10,853 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getId
+2019-08-02 09:33:10,854 DEBUG ObjectMapperBeanPropertyNamingStrategy:60 -Name 'id' renamed to 'id'
+2019-08-02 09:33:10,854 DEBUG OptimizedModelPropertiesProvider:290 -Adding property id to model
+2019-08-02 09:33:10,855 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getId
+2019-08-02 09:33:10,855 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getId
+2019-08-02 09:33:10,855 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getId
+2019-08-02 09:33:10,857 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getId
+2019-08-02 09:33:10,864 DEBUG OptimizedModelPropertiesProvider:122 -Reading property timeGrade
+2019-08-02 09:33:10,865 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeGrade
+2019-08-02 09:33:10,866 DEBUG ObjectMapperBeanPropertyNamingStrategy:60 -Name 'timeGrade' renamed to 'timeGrade'
+2019-08-02 09:33:10,866 DEBUG OptimizedModelPropertiesProvider:290 -Adding property timeGrade to model
+2019-08-02 09:33:10,866 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeGrade
+2019-08-02 09:33:10,866 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeGrade
+2019-08-02 09:33:10,866 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeGrade
+2019-08-02 09:33:10,867 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeGrade
+2019-08-02 09:33:10,867 DEBUG OptimizedModelPropertiesProvider:122 -Reading property timeSemester
+2019-08-02 09:33:10,868 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeSemester
+2019-08-02 09:33:10,868 DEBUG ObjectMapperBeanPropertyNamingStrategy:60 -Name 'timeSemester' renamed to 'timeSemester'
+2019-08-02 09:33:10,869 DEBUG OptimizedModelPropertiesProvider:290 -Adding property timeSemester to model
+2019-08-02 09:33:10,869 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeSemester
+2019-08-02 09:33:10,869 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeSemester
+2019-08-02 09:33:10,870 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeSemester
+2019-08-02 09:33:10,870 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeSemester
+2019-08-02 09:33:10,871 DEBUG OptimizedModelPropertiesProvider:122 -Reading property timeWeek
+2019-08-02 09:33:10,872 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeWeek
+2019-08-02 09:33:10,872 DEBUG ObjectMapperBeanPropertyNamingStrategy:60 -Name 'timeWeek' renamed to 'timeWeek'
+2019-08-02 09:33:10,873 DEBUG OptimizedModelPropertiesProvider:290 -Adding property timeWeek to model
+2019-08-02 09:33:10,873 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeWeek
+2019-08-02 09:33:10,873 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeWeek
+2019-08-02 09:33:10,874 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeWeek
+2019-08-02 09:33:10,874 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeWeek
+2019-08-02 09:33:10,875 DEBUG OptimizedModelPropertiesProvider:122 -Reading property timeDay
+2019-08-02 09:33:10,876 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeDay
+2019-08-02 09:33:10,876 DEBUG ObjectMapperBeanPropertyNamingStrategy:60 -Name 'timeDay' renamed to 'timeDay'
+2019-08-02 09:33:10,876 DEBUG OptimizedModelPropertiesProvider:290 -Adding property timeDay to model
+2019-08-02 09:33:10,876 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeDay
+2019-08-02 09:33:10,877 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeDay
+2019-08-02 09:33:10,878 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeDay
+2019-08-02 09:33:10,878 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeDay
+2019-08-02 09:33:10,879 DEBUG OptimizedModelPropertiesProvider:122 -Reading property timeOrder
+2019-08-02 09:33:10,880 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeOrder
+2019-08-02 09:33:10,880 DEBUG ObjectMapperBeanPropertyNamingStrategy:60 -Name 'timeOrder' renamed to 'timeOrder'
+2019-08-02 09:33:10,881 DEBUG OptimizedModelPropertiesProvider:290 -Adding property timeOrder to model
+2019-08-02 09:33:10,881 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeOrder
+2019-08-02 09:33:10,881 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeOrder
+2019-08-02 09:33:10,882 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeOrder
+2019-08-02 09:33:10,882 DEBUG BeanModelProperty:70 -Evaluating unwrapped getter for member getTimeOrder
+2019-08-02 09:33:10,911 DEBUG DefaultModelProvider:86 -Inferred 6 properties. Properties found id, timeDay, timeGrade, timeOrder, timeSemester, timeWeek
+2019-08-02 09:33:10,913 DEBUG ApiModelReader:87 -Adding a new model with key Time
+2019-08-02 09:33:10,925 DEBUG OperationResponseClassReader:64 -Setting spring response class to:List
+2019-08-02 09:33:10,929 DEBUG OperationAuthReader:99 -Authorization count 0 for method checkTime
+2019-08-02 09:33:10,961 DEBUG SwaggerOperationResponseClassReader:73 -Setting response class to:List
+2019-08-02 09:33:10,977 DEBUG VendorExtensionsReader:59 -Extension count 1 for method checkTime
+2019-08-02 09:33:11,079 INFO  Http11NioProtocol:173 -Starting ProtocolHandler ["http-nio-9999"]
+2019-08-02 09:33:11,141 INFO  ExamApplication:59 -Started ExamApplication in 11.48 seconds (JVM running for 47.333)
+2019-08-02 14:41:35,150 INFO  [/]:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-02 14:41:37,673 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 14:41:37,951 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@688dd652] was not registered for synchronization because synchronization is not active
+2019-08-02 14:41:38,174 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 14:41:38,179 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 14:41:38,534 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 14:41:38,658 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 14:41:38,658 DEBUG PreparedStatementPool:129 -{conn-10001, pstmt-20000} enter cache
+2019-08-02 14:41:38,658 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@688dd652]
+2019-08-02 15:53:42,630 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:53:42,643 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1773f92c] was not registered for synchronization because synchronization is not active
+2019-08-02 15:53:42,684 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:53:42,684 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:53:42,684 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:53:42,699 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:53:42,699 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1773f92c]
+2019-08-02 15:53:47,755 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:53:47,756 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3cda37] was not registered for synchronization because synchronization is not active
+2019-08-02 15:53:47,756 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:53:47,757 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:53:47,757 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:53:47,760 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:53:47,762 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a3cda37]
+2019-08-02 15:53:50,397 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:53:50,398 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@203a8c6b] was not registered for synchronization because synchronization is not active
+2019-08-02 15:53:50,419 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:53:50,420 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:53:50,421 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:53:50,467 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:53:50,468 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@203a8c6b]
+2019-08-02 15:54:05,362 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:54:05,363 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aa91d80] was not registered for synchronization because synchronization is not active
+2019-08-02 15:54:05,363 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:54:05,364 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:54:05,365 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:54:05,368 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:54:05,369 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aa91d80]
+2019-08-02 15:54:06,854 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:54:06,854 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60fb82f4] was not registered for synchronization because synchronization is not active
+2019-08-02 15:54:06,855 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:54:06,855 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:54:06,855 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:54:06,858 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:54:06,859 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60fb82f4]
+2019-08-02 15:54:34,380 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:54:34,381 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ebdbfb6] was not registered for synchronization because synchronization is not active
+2019-08-02 15:54:34,382 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:54:34,383 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:54:34,384 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:54:34,387 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:54:34,388 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ebdbfb6]
+2019-08-02 15:54:39,194 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:54:39,194 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6233b921] was not registered for synchronization because synchronization is not active
+2019-08-02 15:54:39,195 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:54:39,196 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:54:39,197 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:54:39,200 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:54:39,202 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6233b921]
+2019-08-02 15:56:00,394 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:56:00,395 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f17c542] was not registered for synchronization because synchronization is not active
+2019-08-02 15:56:00,406 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:56:00,406 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:56:00,407 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:56:00,409 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:56:00,410 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f17c542]
+2019-08-02 15:56:39,995 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:56:39,996 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19bb3ec] was not registered for synchronization because synchronization is not active
+2019-08-02 15:56:39,997 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:56:39,998 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:56:39,998 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:56:40,002 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:56:40,003 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19bb3ec]
+2019-08-02 15:56:53,632 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:56:53,633 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8b925c] was not registered for synchronization because synchronization is not active
+2019-08-02 15:56:53,634 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:56:53,634 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:56:53,635 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:56:53,638 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:56:53,639 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8b925c]
+2019-08-02 15:57:41,025 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:57:41,025 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20c4b147] was not registered for synchronization because synchronization is not active
+2019-08-02 15:57:41,026 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:57:41,026 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:57:41,027 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:57:41,030 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:57:41,031 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20c4b147]
+2019-08-02 15:58:02,215 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:58:02,216 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7973c9cd] was not registered for synchronization because synchronization is not active
+2019-08-02 15:58:02,217 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:58:02,217 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:58:02,217 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:58:02,256 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:58:02,257 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7973c9cd]
+2019-08-02 15:58:23,917 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:58:23,918 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5176f0] was not registered for synchronization because synchronization is not active
+2019-08-02 15:58:23,919 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:58:23,919 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:58:23,920 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:58:23,937 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:58:23,938 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5176f0]
+2019-08-02 15:58:31,341 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:58:31,342 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a03e984] was not registered for synchronization because synchronization is not active
+2019-08-02 15:58:31,343 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:58:31,343 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:58:31,344 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:58:31,347 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:58:31,348 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a03e984]
+2019-08-02 15:58:33,737 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:58:33,777 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22c41dbb] was not registered for synchronization because synchronization is not active
+2019-08-02 15:58:33,778 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:58:33,799 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:58:33,800 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:58:33,805 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:58:33,807 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22c41dbb]
+2019-08-02 15:58:35,932 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:58:35,933 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68cbd251] was not registered for synchronization because synchronization is not active
+2019-08-02 15:58:35,934 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:58:35,935 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:58:35,935 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:58:35,938 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:58:35,939 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68cbd251]
+2019-08-02 15:58:38,459 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:58:38,459 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aee99fa] was not registered for synchronization because synchronization is not active
+2019-08-02 15:58:38,460 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:58:38,460 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:58:38,461 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:58:38,463 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:58:38,464 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aee99fa]
+2019-08-02 15:59:47,643 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:59:47,643 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b63d89c] was not registered for synchronization because synchronization is not active
+2019-08-02 15:59:47,663 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:59:47,664 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:59:47,664 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:59:47,668 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:59:47,670 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b63d89c]
+2019-08-02 15:59:47,732 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 15:59:47,733 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@503b372d] was not registered for synchronization because synchronization is not active
+2019-08-02 15:59:47,734 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 15:59:47,736 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 15:59:47,738 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 15:59:47,740 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 15:59:47,760 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@503b372d]
+2019-08-02 16:00:04,042 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:00:04,042 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29e7b8d6] was not registered for synchronization because synchronization is not active
+2019-08-02 16:00:04,043 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:00:04,043 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:00:04,044 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:00:04,047 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:00:04,047 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29e7b8d6]
+2019-08-02 16:00:55,150 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:00:55,152 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@183e1652] was not registered for synchronization because synchronization is not active
+2019-08-02 16:00:55,154 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:00:55,155 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:00:55,157 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:00:55,160 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:00:55,161 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@183e1652]
+2019-08-02 16:00:55,192 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:00:55,193 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@754a8a9] was not registered for synchronization because synchronization is not active
+2019-08-02 16:00:55,194 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:00:55,194 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:00:55,195 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:00:55,197 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:00:55,198 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@754a8a9]
+2019-08-02 16:00:57,707 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:00:57,772 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1351a196] was not registered for synchronization because synchronization is not active
+2019-08-02 16:00:57,773 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:00:57,773 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:00:57,774 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:00:57,776 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:00:57,776 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1351a196]
+2019-08-02 16:01:35,300 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:01:35,303 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca78419] was not registered for synchronization because synchronization is not active
+2019-08-02 16:01:35,305 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:01:35,305 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:01:35,306 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:01:35,308 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:01:35,309 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ca78419]
+2019-08-02 16:01:35,449 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:01:35,449 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52cc1f05] was not registered for synchronization because synchronization is not active
+2019-08-02 16:01:35,450 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:01:35,450 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:01:35,452 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:01:35,456 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:01:35,457 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52cc1f05]
+2019-08-02 16:02:09,698 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:02:09,699 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f28a] was not registered for synchronization because synchronization is not active
+2019-08-02 16:02:09,699 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:02:09,700 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:02:09,701 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:02:09,705 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:02:09,707 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7016f28a]
+2019-08-02 16:02:09,732 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:02:09,733 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@723ffb12] was not registered for synchronization because synchronization is not active
+2019-08-02 16:02:09,734 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:02:09,735 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:02:09,736 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:02:09,741 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:02:09,742 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@723ffb12]
+2019-08-02 16:02:12,094 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:02:12,095 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12b98967] was not registered for synchronization because synchronization is not active
+2019-08-02 16:02:12,095 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:02:12,096 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:02:12,096 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:02:12,098 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:02:12,099 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12b98967]
+2019-08-02 16:04:13,200 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:04:13,200 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51a2a288] was not registered for synchronization because synchronization is not active
+2019-08-02 16:04:13,210 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:04:13,210 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:04:13,211 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:04:13,212 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:04:13,213 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51a2a288]
+2019-08-02 16:05:28,150 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:05:28,152 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f3117b1] was not registered for synchronization because synchronization is not active
+2019-08-02 16:05:28,163 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:05:28,163 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:05:28,164 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:05:28,166 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:05:28,166 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f3117b1]
+2019-08-02 16:05:28,977 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 16:05:28,978 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b5e365e] was not registered for synchronization because synchronization is not active
+2019-08-02 16:05:28,979 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 16:05:28,979 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 16:05:28,980 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 16:05:28,982 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 16:05:28,983 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b5e365e]
+2019-08-02 17:07:03,973 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 17:07:03,995 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ac14a36] was not registered for synchronization because synchronization is not active
+2019-08-02 17:07:04,026 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 17:07:04,027 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 17:07:04,029 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 17:07:04,040 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 17:07:04,042 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ac14a36]
+2019-08-02 17:07:07,401 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 17:07:07,402 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b3b1cfd] was not registered for synchronization because synchronization is not active
+2019-08-02 17:07:07,402 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 17:07:07,403 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 17:07:07,404 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 17:07:07,406 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 17:07:07,407 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b3b1cfd]
+2019-08-02 17:07:10,084 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 17:07:10,085 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35d651b0] was not registered for synchronization because synchronization is not active
+2019-08-02 17:07:10,086 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 17:07:10,087 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 17:07:10,087 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 17:07:10,089 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 17:07:10,090 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35d651b0]
+2019-08-02 17:07:13,051 DEBUG SqlSessionUtils:97 -Creating a new SqlSession
+2019-08-02 17:07:13,052 DEBUG SqlSessionUtils:148 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ad71ff2] was not registered for synchronization because synchronization is not active
+2019-08-02 17:07:13,053 DEBUG SpringManagedTransaction:87 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@700c29dd] will not be managed by Spring
+2019-08-02 17:07:13,054 DEBUG selectAll:159 -==>  Preparing: SELECT id,time_grade,time_semester,time_week,time_day,time_order FROM time 
+2019-08-02 17:07:13,055 DEBUG selectAll:159 -==> Parameters: 
+2019-08-02 17:07:13,057 DEBUG selectAll:159 -<==      Total: 4
+2019-08-02 17:07:13,058 DEBUG SqlSessionUtils:191 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ad71ff2]
