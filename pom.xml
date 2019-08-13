@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>top.cllccc</groupId>
-    <artifactId>exam</artifactId>
+    <artifactId>ExamSystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>exam</name>
+    <name>ExamSystem</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
