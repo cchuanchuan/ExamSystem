@@ -88,6 +88,13 @@
             <version>1.3.7</version>
         </dependency>
 
+        <!--websocket jar包-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+
+
         <!--@Data注解依赖包-->
         <!--Slf4j日志依赖文件-->
         <dependency>
