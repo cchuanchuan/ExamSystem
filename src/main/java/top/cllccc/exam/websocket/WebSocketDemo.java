@@ -22,7 +22,7 @@ public class WebSocketDemo {
 
     @OnClose
     public void onClose(Session session, CloseReason reason) {
-        System.out.println("webSocket连接关闭：sessionId:"+session.getId() + "关闭原因是："+reason.getReasonPhrase() + "code:"+reason.getCloseCode());
+        System.out.println("webSocket连接关闭：sessionId:"+session.getId() + "关闭原因是："+reason.getReasonPhrase() + ",code:"+reason.getCloseCode());
     }
 
     @OnError

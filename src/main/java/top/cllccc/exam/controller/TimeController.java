@@ -1,5 +1,8 @@
 package top.cllccc.exam.controller;
 
+import com.alibaba.druid.support.json.JSONUtils;
+import com.alibaba.fastjson.JSONObject;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -29,7 +32,7 @@ public class TimeController {
     @ApiOperation("查询所有时间")
     @GetMapping("checkTime")
     @ResponseBody
-    public List<Time> checkTime(){
-        return timeMapper.selectAll();
+    public String checkTime(){
+        return timeService.get(2,1);
     }
 }
