@@ -13,7 +13,7 @@ import top.cllccc.exam.service.TimeService;
 
 
 @RestController
-@Api(value = "时间管理",description = "时间管理")
+@Api(value = "时间管理", description = "时间管理")
 @RequestMapping("time")
 @Controller("timeController")
 @Slf4j
@@ -28,8 +28,8 @@ public class TimeController {
     @ApiOperation("查询所有时间")
     @GetMapping("checkTime")
     //@ResponseBody
-    public String checkTime(){
+    public String checkTime() {
         log.info("checkTime");
-        return timeService.get(2,1);
+        return timeService.get(2, 1);
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.cllccc.exam.dao.common.dao.ClassRoomMapper">
+  <resultMap id="BaseResultMap" type="top.cllccc.exam.domain.ClassRoom">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="room_no" jdbcType="VARCHAR" property="roomNo" />
+    <result column="room_place" jdbcType="VARCHAR" property="roomPlace" />
+    <result column="room_capacity" jdbcType="INTEGER" property="roomCapacity" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, room_no, room_place, room_capacity
+  </sql>
+</mapper>

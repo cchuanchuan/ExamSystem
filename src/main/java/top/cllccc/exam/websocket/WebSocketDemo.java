@@ -1,6 +1,7 @@
 package top.cllccc.exam.websocket;
 
 import org.springframework.stereotype.Component;
+
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 
@@ -15,14 +16,14 @@ public class WebSocketDemo {
 
     @OnMessage
     public String onMessage(String message, Session session) {
-        System.out.println("收到客户端发送的信息:"+message);
-        System.out.println("当前的sessionId:"+session.getId());
+        System.out.println("收到客户端发送的信息:" + message);
+        System.out.println("当前的sessionId:" + session.getId());
         return "SUCCESS";
     }
 
     @OnClose
     public void onClose(Session session, CloseReason reason) {
-        System.out.println("webSocket连接关闭：sessionId:"+session.getId() + "关闭原因是："+reason.getReasonPhrase() + ",code:"+reason.getCloseCode());
+        System.out.println("webSocket连接关闭：sessionId:" + session.getId() + "关闭原因是：" + reason.getReasonPhrase() + ",code:" + reason.getCloseCode());
     }
 
     @OnError
@@ -30,7 +31,6 @@ public class WebSocketDemo {
         t.printStackTrace();
 
     }
-
 
 
 }

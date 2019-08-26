@@ -21,6 +21,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.basePackage("top.cllccc.exam.controller"))
                 .paths(PathSelectors.any()).build();
     }
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Spring Boot中使用Swagger2构建RESTful APIs")

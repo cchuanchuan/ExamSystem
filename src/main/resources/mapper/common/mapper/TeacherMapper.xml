@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.cllccc.exam.dao.common.dao.TeacherMapper">
+  <resultMap id="BaseResultMap" type="top.cllccc.exam.domain.Teacher">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="tc_no" jdbcType="VARCHAR" property="tcNo" />
+    <result column="tc_name" jdbcType="VARCHAR" property="tcName" />
+    <result column="tc_gender" jdbcType="VARCHAR" property="tcGender" />
+    <result column="tc_inst" jdbcType="VARCHAR" property="tcInst" />
+    <result column="tc_tel" jdbcType="VARCHAR" property="tcTel" />
+  </resultMap>
+</mapper>

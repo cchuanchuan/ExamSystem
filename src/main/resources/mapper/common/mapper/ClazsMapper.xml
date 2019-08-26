@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.cllccc.exam.dao.common.dao.ClazsMapper">
+  <resultMap id="BaseResultMap" type="top.cllccc.exam.domain.Clazs">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="class_grade" jdbcType="INTEGER" property="classGrade" />
+    <result column="class_count" jdbcType="INTEGER" property="classCount" />
+    <result column="dep_id" jdbcType="INTEGER" property="depId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, class_name, class_grade, class_count, dep_id
+  </sql>
+</mapper>
