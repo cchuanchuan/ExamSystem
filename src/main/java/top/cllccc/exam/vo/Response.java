@@ -19,12 +19,12 @@ public class Response {
     /**
      * 错误码，正确返回空
      */
-    private String responseCode = ResponseCode.SUCCESS.getCode();
+    private int Code = ResponseCode.SUCCESS.getCode();
 
     /**
      * 错误信息，正确返回空字符串
      */
-    private String ResponseMessage = ResponseCode.SUCCESS.getMessage();
+    private String Message = ResponseCode.SUCCESS.getMessage();
 
     /**
      * 返回对象值

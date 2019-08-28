@@ -19,7 +19,7 @@ public class TokenModel {
     /**
      * 编号（key)
      */
-    private String key;
+    private String token;
 
     /**
      * 用户身份(token信息)
@@ -29,24 +29,24 @@ public class TokenModel {
     /**
      * 设置学生token
      */
-    public void setStudentToken(String key) {
+    public void setStudentToken(String token) {
         tokenInfo = TokenInfo.STUDENT_TOKEN;
-        this.key = key;
+        this.token = token;
     }
 
     /**
      * 设置教师token
      */
-    public void setTeacherToken(String key){
+    public void setTeacherToken(String token){
         tokenInfo = TokenInfo.TEACHER_TOKEN;
-        this.key = key;
+        this.token = token;
     }
 
     /**
      * 设置管理员token
      */
-    public void setAdminToken(String key){
+    public void setAdminToken(String token){
         tokenInfo = TokenInfo.ADMIN_TOKEN;
-        this.key = key;
+        this.token = token;
     }
 }

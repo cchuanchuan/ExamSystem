@@ -1,15 +1,19 @@
 package top.cllccc.exam.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import top.cllccc.exam.dao.common.dao.TimeMapper;
-import top.cllccc.exam.service.TimeService;
+import top.cllccc.exam.domain.Time;
+import top.cllccc.exam.service.BaseService;
+
 
 
 @RestController
@@ -20,16 +24,14 @@ import top.cllccc.exam.service.TimeService;
 public class TimeController {
 
     @Autowired
-    private TimeMapper timeMapper;
-
-    @Autowired
-    private TimeService timeService;
+    private BaseService<Time> baseService;
 
     @ApiOperation("查询所有时间")
-    @GetMapping("checkTime")
-    //@ResponseBody
-    public String checkTime() {
-        log.info("checkTime");
-        return timeService.get(2, 1);
+    @GetMapping("queryTimePage")
+    public String queryTimePage(@RequestParam(required = false, defaultValue = "1") Integer pageNum,
+                                @RequestParam(required = false, defaultValue = "10")Integer pageSize) {
+        log.info("queryTimePage");
+        return JSONObject.toJSONString(baseService.queryPage(pageNum,pageSize));
     }
+
 }

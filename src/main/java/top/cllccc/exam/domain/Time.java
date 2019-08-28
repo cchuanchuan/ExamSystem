@@ -1,7 +1,10 @@
 package top.cllccc.exam.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
+@Data
 public class Time {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

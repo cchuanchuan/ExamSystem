@@ -19,12 +19,12 @@ public class ResponsePage {
     /**
      * 错误码，正确返回空
      */
-    private String responseCode = ResponseCode.SUCCESS.getCode();
+    private int Code = ResponseCode.SUCCESS.getCode();
 
     /**
      * 错误信息，正确返回空字符串
      */
-    private String ResponseMessage = ResponseCode.SUCCESS.getMessage();
+    private String Message = ResponseCode.SUCCESS.getMessage();
 
     /**
      * 返回数据
@@ -32,12 +32,12 @@ public class ResponsePage {
     private Object data;
 
     /**
-     * 每页大小
+     * 每页大小(limit)
      */
     private Integer pageSize;
 
     /**
-     * 页码
+     * 页码(page)
      */
     private Integer pageNum;
 
@@ -49,7 +49,7 @@ public class ResponsePage {
     /**
      * <h2>正确响应构造函数</h2>
      *
-     * @param data 响应数据
+     * @param items 响应数据
      */
     public ResponsePage(Object data) {
         this.data = data;

@@ -11,16 +11,8 @@ import top.cllccc.exam.domain.Time;
 
 @Slf4j
 @Service("timeService")
-public class TimeService {
+public class TimeService extends BaseService<Time> {
     @Autowired
     private TimeMapper timeMapper;
 
-    public String get(int pageNum,int pageSize) {
-        Page<Time> page = PageHelper.startPage(pageNum,pageSize);
-
-        String str = JSONObject.toJSONString(timeMapper.selectAll());
-        System.out.println(page);
-        System.out.println("===total:"+page.getTotal());
-        return str;
-    }
 }

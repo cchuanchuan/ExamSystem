@@ -16,11 +16,16 @@ public class TokenInfo {
     /**
      * 教师token
      */
-    public final static String TEACHER_TOKEN = "teacher-token";
+    public final static String TEACHER_TOKEN = "teacher-user";
 
     /**
      * 管理员token
      */
     public final static String ADMIN_TOKEN = "admin-user";
+
+    /**
+     * token标记
+     */
+    public final static String TOKEN_HEADER = "X-Token";
 
 }
