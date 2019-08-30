@@ -1,15 +1,16 @@
-package top.cllccc.exam.config;
+package top.cllccc.exam.interceptor;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-import top.cllccc.exam.Utils.PassToken;
+import top.cllccc.exam.annotation.PassToken;
 import top.cllccc.exam.constants.TokenInfo;
 import top.cllccc.exam.domain.User;
 import top.cllccc.exam.service.UserService;
@@ -25,6 +26,7 @@ import java.lang.reflect.Method;
  * @Author: CCC
  * @Date 2019/8/27 11:18
  */
+@Slf4j
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 
     @Autowired

@@ -7,8 +7,8 @@ import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import top.cllccc.exam.Utils.PassToken;
-import top.cllccc.exam.Utils.TokenHelper;
+import top.cllccc.exam.annotation.PassToken;
+import top.cllccc.exam.utils.TokenHelper;
 import top.cllccc.exam.constants.ResponseCode;
 import top.cllccc.exam.domain.User;
 import top.cllccc.exam.domain.dto.LoginForm;
@@ -70,6 +70,11 @@ public class UserController {
         return JSONObject.toJSONString(response);
     }
 
+    /**
+     * 获取用户信息（前端用于验证）
+     * @param tokenKey
+     * @return
+     */
     @GetMapping("getInfo")
     @ResponseBody
     @PassToken
@@ -94,6 +99,11 @@ public class UserController {
         return JSONObject.toJSONString(response);
     }
 
+    /**
+     * 退出登录
+     * @param request
+     * @return
+     */
     @PostMapping("logout")
     @ResponseBody
     @PassToken

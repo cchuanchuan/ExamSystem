@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import top.cllccc.exam.domain.Time;
 import top.cllccc.exam.service.BaseService;
-
+import top.cllccc.exam.service.TimeService;
 
 
 @RestController
@@ -24,14 +24,13 @@ import top.cllccc.exam.service.BaseService;
 public class TimeController {
 
     @Autowired
-    private BaseService<Time> baseService;
+    private TimeService timeService;
 
-    @ApiOperation("查询所有时间")
+    @ApiOperation("查询时间信息")
     @GetMapping("queryTimePage")
     public String queryTimePage(@RequestParam(required = false, defaultValue = "1") Integer pageNum,
                                 @RequestParam(required = false, defaultValue = "10")Integer pageSize) {
         log.info("queryTimePage");
-        return JSONObject.toJSONString(baseService.queryPage(pageNum,pageSize));
+        return JSONObject.toJSONString(timeService.queryPage(pageNum,pageSize));
     }
-
 }

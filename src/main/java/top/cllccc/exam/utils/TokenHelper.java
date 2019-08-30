@@ -1,4 +1,4 @@
-package top.cllccc.exam.Utils;
+package top.cllccc.exam.utils;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

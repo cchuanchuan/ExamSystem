@@ -10,6 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
+    @Id //标记主键，若无次标记，修改时将出错
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 

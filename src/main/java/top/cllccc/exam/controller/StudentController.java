@@ -2,12 +2,11 @@ package top.cllccc.exam.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import top.cllccc.exam.domain.Student;
 import top.cllccc.exam.service.BaseService;
 
@@ -18,21 +17,46 @@ import top.cllccc.exam.service.BaseService;
  * @Date 2019/8/22 17:02
  */
 @RestController
-@Api(value = "学生管理", description = "时间管理")
+@Api(value = "学生管理", description = "学生管理")
 @RequestMapping("student")
 @Controller("studentController")
 @Slf4j
-public class StudentController {
+public class StudentController extends BaseController<Student>{
 
     @Autowired
     BaseService<Student> baseService;
 
-    @GetMapping("queryStudentPage")
-    public String queryStudentPage(){
-        log.info("queryStudentPage");
-        return JSONObject.toJSONString(baseService.queryPage(1,1));
+    @Override
+    public BaseService<Student> getBaseService() {
+        return baseService;
     }
 
+    @ApiOperation("查询学生信息")
+    @GetMapping("queryStudentPage")
+    public String queryStudentPage(@RequestParam(required = false, defaultValue = "1") Integer pageNum,
+                                   @RequestParam(required = false, defaultValue = "10") Integer pageSize) {
+        log.info("queryStudentPage: pageNum=" + pageNum + "pageSize=" + pageSize);
+        return JSONObject.toJSONString(baseService.queryPage(pageNum, pageSize));
+    }
 
+    @ApiOperation("增加学生信息")
+    @PostMapping("addStudent")
+    public String addStudent(@RequestBody Student student) {
+        log.info("addStudent: Student=" + student);
+        return JSONObject.toJSONString(baseService.addObject(student));
+    }
 
+    @ApiOperation("修改学生信息")
+    @PutMapping("updateStudent")
+    public String updateStudent(@RequestBody Student student) {
+        log.info("updateStudent: Student=" + student);
+        return JSONObject.toJSONString(baseService.updateObject(student));
+    }
+
+    @ApiOperation("删除学生信息")
+    @DeleteMapping("deleteStudent")
+    public String deleteStudent(@RequestBody Student student) {
+        log.info("deleteStudent: Student=" + student);
+        return JSONObject.toJSONString(baseService.deleteObject(student));
+    }
 }
