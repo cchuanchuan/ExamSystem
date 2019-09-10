@@ -29,7 +29,7 @@ public abstract class BaseController<T> {
         return JSONObject.toJSONString(getBaseService().queryAll());
     }
 
-    @GetMapping("queryAllByCondition")
+    @PostMapping("queryAllByCondition")
     public String queryAllByCondition(@RequestBody T t) {
         log.info("queryAllByCondition");
         return JSONObject.toJSONString(getBaseService().queryAllByCondition(t));

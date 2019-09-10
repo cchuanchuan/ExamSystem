@@ -1,34 +1,32 @@
 package top.cllccc.exam.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.cllccc.exam.domain.Course;
+import top.cllccc.exam.domain.ExamRoom;
 import top.cllccc.exam.service.BaseService;
-import top.cllccc.exam.service.CourseService;
+import top.cllccc.exam.service.ExamRoomService;
+import top.cllccc.exam.service.ExamService;
 
 /**
  * <h1></h1>
  *
  * @Author: CCC
- * @Date 2019/8/29 16:50
+ * @Date 2019/9/3 9:03
  */
-@Controller
-@RequestMapping("course")
 @Slf4j
+@Controller
 @RestController
-public class CourseController extends  BaseController<Course> {
+@RequestMapping("examRoom")
+public class ExamRoomController extends BaseController<ExamRoom> {
 
     @Autowired
-    private CourseService courseService;
+    ExamRoomService examRoomService;
 
     @Override
-    public BaseService<Course> getBaseService() {
-        return courseService;
+    public BaseService<ExamRoom> getBaseService() {
+        return examRoomService;
     }
-
 }

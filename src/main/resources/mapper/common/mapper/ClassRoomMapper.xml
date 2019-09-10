@@ -16,4 +16,28 @@
     -->
     id, room_no, room_place, room_capacity
   </sql>
+
+  <select id="queryEmptyClassRoom" resultType="top.cllccc.exam.domain.ClassRoom">
+    SELECT class_room.*
+    FROM class_room
+    WHERE id NOT IN(
+    SELECT DISTINCT room_id
+    FROM course_time_room
+    WHERE time_id in
+    <foreach collection="list" item="item" open="(" close=")"
+             separator=",">
+      #{item}
+    </foreach>
+    )AND id NOT IN(
+    SELECT DISTINCT r.room_id
+    FROM exam_room r
+    LEFT JOIN exam_time t
+    ON r.exam_id = t.exam_id
+    WHERE time_id IN
+    <foreach collection="list" item="item" open="(" close=")"
+             separator=",">
+      #{item}
+    </foreach>
+    )
+  </select>
 </mapper>

@@ -3,12 +3,19 @@ package top.cllccc.exam.controller;
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import top.cllccc.exam.domain.Student;
+import top.cllccc.exam.domain.dto.ExamCourseTimeDto;
 import top.cllccc.exam.service.BaseService;
+import top.cllccc.exam.service.StudentService;
+import top.cllccc.exam.vo.Response;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <h1></h1>
@@ -26,9 +33,18 @@ public class StudentController extends BaseController<Student>{
     @Autowired
     BaseService<Student> baseService;
 
+    @Autowired
+    StudentService studentService;
+
     @Override
     public BaseService<Student> getBaseService() {
         return baseService;
+    }
+
+
+    @PostMapping("checkCourseStudentBusy")
+    public String checkCourseStudentBusy(@RequestBody ExamCourseTimeDto examCourseTimeDto){
+        return JSONObject.toJSONString(studentService.checkCourseStudentBusy(examCourseTimeDto));
     }
 
     @ApiOperation("查询学生信息")

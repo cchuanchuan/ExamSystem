@@ -1,5 +1,6 @@
 package top.cllccc.exam.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -7,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import top.cllccc.exam.domain.*;
 import top.cllccc.exam.service.BaseService;
+import top.cllccc.exam.service.ClazsService;
+import top.cllccc.exam.vo.Response;
 
 import javax.annotation.Resource;
 
@@ -22,11 +25,17 @@ import javax.annotation.Resource;
 public class ClazsController extends BaseController<Clazs> {
 
     @Autowired
-    private BaseService<Clazs> baseService;
+    private ClazsService clazsService;
 
-    @Bean
+    @Override
     public BaseService<Clazs> getBaseService(){
-        return baseService;
+        return clazsService;
+    }
+
+    @GetMapping("queryClazsByCourse")
+    public String queryClazsByCourse(@RequestParam(required = true) Integer courseId){
+        Response response = clazsService.queryClazsByCourse(courseId);
+        return JSONObject.toJSONString(response);
     }
 
 }

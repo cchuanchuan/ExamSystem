@@ -168,7 +168,7 @@
                <!--selectByExampleQueryId="false">-->
             <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
         <!--</table>-->
-        <table tableName="user"
+        <table tableName="date_time"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"

@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="top.cllccc.exam.dao.common.dao.StudentMapper">
-  <resultMap id="BaseResultMap" type="top.cllccc.exam.domain.Student">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <result column="id" jdbcType="INTEGER" property="id" />
-    <result column="student_no" jdbcType="VARCHAR" property="studentNo" />
-    <result column="student_name" jdbcType="VARCHAR" property="studentName" />
-    <result column="student_sex" jdbcType="VARCHAR" property="studentSex" />
-    <result column="student_phone" jdbcType="VARCHAR" property="studentPhone" />
-    <result column="student_address" jdbcType="VARCHAR" property="studentAddress" />
-    <result column="class_id" jdbcType="VARCHAR" property="classId" />
-    <result column="student_password" jdbcType="VARCHAR" property="studentPassword" />
-  </resultMap>
+    <resultMap id="BaseResultMap" type="top.cllccc.exam.domain.Student">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="student_no" jdbcType="VARCHAR" property="studentNo"/>
+        <result column="student_name" jdbcType="VARCHAR" property="studentName"/>
+        <result column="student_sex" jdbcType="VARCHAR" property="studentSex"/>
+        <result column="student_phone" jdbcType="VARCHAR" property="studentPhone"/>
+        <result column="student_address" jdbcType="VARCHAR" property="studentAddress"/>
+        <result column="class_id" jdbcType="VARCHAR" property="classId"/>
+        <result column="student_password" jdbcType="VARCHAR" property="studentPassword"/>
+    </resultMap>
+
+    <select id="checkStudentBusyTime" resultType="java.lang.Integer">
+        SELECT count(*)
+        FROM time WHERE id in
+        <foreach collection="list" item="item" open="(" close=")"
+                 separator=",">
+            #{item}
+        </foreach>
+        AND id NOT IN(
+        SELECT t.time_id FROM(
+        SELECT DISTINCT time_id
+        FROM exam_time
+        WHERE exam_id in(
+        SELECT id
+        FROM exam
+        WHERE course_id IN(
+        SELECT DISTINCT course_id
+        FROM stu_course
+        WHERE student_id
+        IN(
+        SELECT student_id
+        FROM stu_course
+        WHERE course_id = #{courseId}
+        )
+        ) AND course_id != #{courseId}
+        )
+        UNION ALL
+        SELECT DISTINCT time_id
+        FROM stu_course s
+        LEFT JOIN course_time c
+        ON
+        s.course_id = c.course_id
+        WHERE student_id IN(
+        SELECT student_id
+        FROM stu_course
+        WHERE course_id = #{courseId}
+        )
+        AND s.course_id != #{courseId}
+        ) t
+        )
+
+
+  </select>
 </mapper>

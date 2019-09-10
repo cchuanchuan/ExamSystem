@@ -1,23 +1,23 @@
-package top.cllccc.exam.domain;
+package top.cllccc.exam.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "exam_room")
-public class ExamRoom {
+public class Grade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "exam_id")
-    private Integer examId;
+    @Column(name = "grade")
+    private String grade;
 
-    @Column(name = "room_id")
-    private Integer roomId;
+    @Column(name = "semester")
+    private String semester;
 
 }

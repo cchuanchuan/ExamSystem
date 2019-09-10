@@ -1,10 +1,10 @@
 package top.cllccc.exam.controller;
 
+
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import top.cllccc.exam.domain.Time;
 import top.cllccc.exam.service.BaseService;
 import top.cllccc.exam.service.TimeService;
+import top.cllccc.exam.vo.Response;
 
 
 @RestController
@@ -21,7 +22,7 @@ import top.cllccc.exam.service.TimeService;
 @RequestMapping("time")
 @Controller("timeController")
 @Slf4j
-public class TimeController {
+public class TimeController extends BaseController<Time> {
 
     @Autowired
     private TimeService timeService;
@@ -32,5 +33,17 @@ public class TimeController {
                                 @RequestParam(required = false, defaultValue = "10")Integer pageSize) {
         log.info("queryTimePage");
         return JSONObject.toJSONString(timeService.queryPage(pageNum,pageSize));
+    }
+
+    @ApiOperation("查询学期")
+    @GetMapping("queryDistinctGrade")
+    public String queryDistinctGrade() {
+        Response response = timeService.queryDistinctGrade();
+        return JSONObject.toJSONString(response);
+    }
+
+    @Override
+    public BaseService<Time> getBaseService() {
+        return timeService;
     }
 }

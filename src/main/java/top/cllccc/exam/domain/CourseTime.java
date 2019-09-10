@@ -1,7 +1,14 @@
 package top.cllccc.exam.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "course_time")
 public class CourseTime {
     @Id
@@ -14,45 +21,4 @@ public class CourseTime {
     @Column(name = "time_id")
     private Integer timeId;
 
-    /**
-     * @return id
-     */
-    public Integer getId() {
-        return id;
-    }
-
-    /**
-     * @param id
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    /**
-     * @return course_id
-     */
-    public Integer getCourseId() {
-        return courseId;
-    }
-
-    /**
-     * @param courseId
-     */
-    public void setCourseId(Integer courseId) {
-        this.courseId = courseId;
-    }
-
-    /**
-     * @return time_id
-     */
-    public Integer getTimeId() {
-        return timeId;
-    }
-
-    /**
-     * @param timeId
-     */
-    public void setTimeId(Integer timeId) {
-        this.timeId = timeId;
-    }
-}
+ }

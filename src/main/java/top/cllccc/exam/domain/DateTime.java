@@ -4,20 +4,23 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import javax.persistence.*;
+
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "exam_room")
-public class ExamRoom {
+@AllArgsConstructor
+@Table(name = "date_time")
+public class DateTime {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "exam_id")
-    private Integer examId;
+    private Integer week;
 
-    @Column(name = "room_id")
-    private Integer roomId;
+    private Integer day;
+
+    @Column(name = "date")
+    private Date date;
 
 }

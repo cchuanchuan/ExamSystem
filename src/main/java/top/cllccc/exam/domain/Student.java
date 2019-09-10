@@ -30,7 +30,7 @@ public class Student {
     private String studentAddress;
 
     @Column(name = "class_id")
-    private String classId;
+    private Integer classId;
 
     @Column(name = "student_password")
     private String studentPassword;

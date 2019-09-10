@@ -2,13 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="top.cllccc.exam.dao.common.dao.CourseMapper">
   <resultMap id="BaseResultMap" type="top.cllccc.exam.domain.Course">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <result column="course_no" jdbcType="VARCHAR" property="courseNo" />
-    <result column="course_name" jdbcType="VARCHAR" property="courseName" />
-    <result column="course_semester" jdbcType="VARCHAR" property="courseSemester" />
-    <result column="c_limit" jdbcType="INTEGER" property="cLimit" />
-    <result column="remark" jdbcType="VARCHAR" property="remark" />
   </resultMap>
+
 </mapper>

@@ -5,10 +5,43 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <result column="tc_no" jdbcType="VARCHAR" property="tcNo" />
-    <result column="tc_name" jdbcType="VARCHAR" property="tcName" />
-    <result column="tc_gender" jdbcType="VARCHAR" property="tcGender" />
-    <result column="tc_inst" jdbcType="VARCHAR" property="tcInst" />
-    <result column="tc_tel" jdbcType="VARCHAR" property="tcTel" />
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="teacher_no" jdbcType="VARCHAR" property="teacherNo" />
+    <result column="teacher_name" jdbcType="VARCHAR" property="teacherName" />
+    <result column="teacher_prof" jdbcType="VARCHAR" property="teacherProf" />
+    <result column="teacher_phone" jdbcType="VARCHAR" property="teacherPhone" />
+    <result column="teacher_password" jdbcType="VARCHAR" property="teacherPassword" />
+    <result column="dep_id" jdbcType="INTEGER" property="depId" />
   </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, teacher_no, teacher_name, teacher_prof, teacher_phone, teacher_password, dep_id
+  </sql>
+
+  <select id="queryHasTimeTeacher" resultType="top.cllccc.exam.domain.Teacher">
+    SELECT teacher.* from teacher
+    where id not in(
+    SELECT DISTINCT teacher_id
+    FROM exam_teacher tea
+    LEFT JOIN exam_time tim
+    ON tea.exam_id = tim.exam_id
+    WHERE time_id in
+    <foreach collection="list" item="item" open="(" close=")"
+                             separator=",">
+      #{item}
+    </foreach>
+    ) and id NOT in(
+    SELECT DISTINCT teacher_id
+    FROM teach_plan t
+    LEFT JOIN course_time c
+    on t.course_id = c.course_id
+    WHERE time_id in
+    <foreach collection="list" item="item" open="(" close=")"
+             separator=",">
+      #{item}
+    </foreach>
+    )
+  </select>
 </mapper>
